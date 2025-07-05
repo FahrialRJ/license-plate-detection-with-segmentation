@@ -6,10 +6,13 @@ The implementation follows the methodology described in the referenced journal w
 
 - Grayscale conversion using luminosity method
 - Visualization of RGB components and histograms
+- Otsu thresholding for binary conversion before edge detection
 - Prewitt and Sobel edge detection
 - Implementation of morphology using closing method (Dilation -> Erosion)
-- Image segmentation and bounding box detection for license plates
-- Side-by-side visual comparison between segmentation steps
+- Blob analysis using connected components
+- ROI-based Otsu thresholding for refining license plate segmentation
+- Contour detection and bounding box visualization for detected plates
+- Side-by-side visual comparison across all stages of processing
 
 Notes:
 - This program only processes images named "2.jpg" by default. You can modify the filename directly in the code to accept custom filenames
